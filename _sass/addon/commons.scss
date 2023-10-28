@@ -653,6 +653,7 @@ $sidebar-display: "sidebar-display";
   background: url('/assets/img/post/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -669,8 +670,7 @@ $sidebar-display: "sidebar-display";
     &:hover {
       @include no-text-decoration;
 
-      color: #fff;
-      //color: var(--sidebar-active-color) !important;
+      color: var(--sidebar-active-color) !important;
     }
   }
 
