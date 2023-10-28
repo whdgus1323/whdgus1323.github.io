@@ -2,8 +2,6 @@
 
 - type: github
   icon: "fab fa-github"
-- type: instagram
-  icon: "fab fa-instagram"
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
