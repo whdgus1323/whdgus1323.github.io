@@ -644,8 +644,14 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
+  /*
   background: var(--sidebar-bg);
   background-size: cover;
+  background-position: center;
+  */
+
+  background: url('/assets/img/background.jpg');
+  background-size: 100% 100%;
   background-position: center;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
