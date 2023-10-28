@@ -14,5 +14,5 @@ Currently, I am studying **information and communication** at **Gongju Graduate*
 
 ### Portfolio
 
-Git Blog
+Github Blog
 🔗 [https://whdgus1323.github.io/](https://whdgus1323.github.io/)
