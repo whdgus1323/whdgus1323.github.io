@@ -12,7 +12,7 @@ order: 4
 My name is **Choe JongHyeon**, major in **computer engineering** since 2016 at **Kongju University**.</br>
 Currently, I am studying **information and communication** at **Gongju Graduate** School.
 
-### Portfolio
+### Portfolios
 
 Github Blog
 🔗 [https://whdgus1323.github.io/](https://whdgus1323.github.io/)
