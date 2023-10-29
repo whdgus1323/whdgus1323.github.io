@@ -13,9 +13,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: whdgus1323 # the main title
+title: 뿔개구리 # the main title
 
-tagline: whdgus1323 # it will display as the sub-title
+tagline: 연구 및 공부 내용을 기록하기 위한 블로그입니다. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   깃허브 포트폴리오
