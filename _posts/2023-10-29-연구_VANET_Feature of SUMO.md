@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/img/post/ns-3-logo.png
+  path: /assets/img/post/SUMO_logo.png
 ---
 
 # Research Scope
