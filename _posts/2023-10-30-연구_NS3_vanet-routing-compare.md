@@ -7,6 +7,7 @@ tags: [rsu,vanet,ns3,network]
 pin: true
 math: true
 mermaid: true
+published: true
 image:
   path: /assets/img/post/ns-3-logo.png
 ---
