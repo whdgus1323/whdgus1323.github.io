@@ -1,5 +1,5 @@
 ---
-title: 연구 - VANET환경에서의 효율적인 RSU 배치 - Research Scope
+title: VANET환경에서의 효율적인 RSU 배치 - Research Scope
 author: whdgus1323
 date: 2023-10-30 11:33:00 +0800
 categories: [Network, NS3]
