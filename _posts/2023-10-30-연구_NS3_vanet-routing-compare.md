@@ -1,9 +1,9 @@
 ---
-title: VANET 환경에서의 효율적인 RSU 배치
+title: VANET환경에서의 효율적인 RSU 배치 - Research Scope
 author: whdgus1323
 date: 2023-10-30 11:33:00 +0800
-categories: [Network, NS3]
-tags: [rsu,vanet,ns3,network]
+categories: [Programming, BOJ]
+tags: [vanet,ns3,network]
 pin: true
 math: true
 mermaid: true
