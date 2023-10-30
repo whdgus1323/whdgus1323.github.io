@@ -1,8 +1,8 @@
 ---
-title: "VANET환경에서의 효율적인 RSU 배치 [Research Scope]"
+title: "SUMO에 대해서 - [About SUMO]"
 author: whdgus1323
 date: 2023-10-29 11:33:00 +0800
-categories: [Network, NS3]
+categories: [Research, VANET 환경에서의 효율적인 RSU 배치]
 tags: [rsu,vanet,ns3,network]
 pin: true
 math: true
