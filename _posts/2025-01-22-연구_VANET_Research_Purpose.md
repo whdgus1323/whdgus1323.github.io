@@ -2,7 +2,7 @@
 title: "연구 목적 - [Research Purpose]"
 author: whdgus1323
 date: 2025-01-22 11:33:00 +0800
-categories: [Research, VANET 환경에서의 효율적인 RSU 배치]
+categories: [Research, VANET 환경에서의 효율적인 RSU 배치, 테스트]
 tags: [rsu,vanet,ns3,network]
 pin: true
 math: true
