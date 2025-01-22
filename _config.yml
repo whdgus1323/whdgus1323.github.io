@@ -104,7 +104,7 @@ assets:
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development|production]
 
-futrue: true
+future: true
 
 pwa:
   enabled: true # the option for PWA feature
