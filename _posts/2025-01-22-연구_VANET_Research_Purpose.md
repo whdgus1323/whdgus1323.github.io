@@ -11,27 +11,96 @@ image:
   path: /assets/img/post/ns-3-logo.png
 ---
 
-# Research Scope
-4가지의 범위로 구성됩니다.
+## 🚀 Introduction
+The **Ad hoc On-Demand Distance Vector (AODV)** routing protocol is a cornerstone of wireless ad hoc networks, including **Vehicular Ad Hoc Networks (VANETs)**. It dynamically establishes routes only when required, optimizing network efficiency.
 
-## 1. SUMO 시뮬레이션 환경
+---
 
-연구는 **SUMO(도로 트래픽 시뮬레이터)**를 기반으로 합니다.\
-SUMO는 현실적인 도로 환경을 모델링하고 차량의 이동 패턴, 교통 흐름, 혼잡도 등을 시뮬레이션 할 수 있는
-강력한 도구 입니다.
+## 🌟 Key Features of AODV
+- **Reactive Routing**: Creates routes **on-demand**, reducing overhead from unused paths.
+- **Route Discovery**: Utilizes **Route Request (RREQ)** and **Route Reply (RREP)** messages for efficient route setup.
+- **Route Maintenance**: Ensures robust communication via **Route Error (RERR)** messages.
+- **Sequence Numbers**: Guarantees up-to-date routes while avoiding loops.
 
-## 2. 차량 이동 경로 분석
+---
 
-연구는 도로 네트워크에서 발생하는 차량의 이동 패턴과 교통 혼잡도를 분석합니다.\
-**SUMO**를 사용하여 차량의 이동 경로를 추적하고 교통 흐름을 분석하여 RSU 배치에 영향을 미치는
-요소들을 파악합니다.
+## 💡 How AODV Works
 
-## 3.RSU 배치 기법 개발
+```mermaid
+graph TD
+A[Source Node] -->|RREQ| B[Intermediate Node]
+B -->|RREQ| C[Destination Node]
+C -->|RREP| B
+B -->|RREP| A
+A -->|Data Packet| C
+```
 
-분석된 차량 이동 경로와 교통 혼잡도를 기반으로 RSU의 최적 위치를 결정하는 알고리즘을 개발합니다.\
-RSU의 배치방식, 수량, 간격 등을 고려하여 도로 네트워크의 특성에 맞는 효과적인 RSU 배치 기법을 제안합니다.
+1. **Route Discovery**:
+   - The source node broadcasts a **RREQ** to find the destination.
+   - Each intermediate node forwards the RREQ until it reaches the destination.
 
-## 4.시뮬레이션 검증
+2. **Route Reply**:
+   - The destination sends back a **RREP** to establish the path.
 
-제안된 RSU 배치 기법의 효과를 다양한 시뮬레이션 시나리오에서 검증합니다.\
-SUMO를 사용하여 실제 도로 환경을 모델링하고 RSU 배치 기법을 시뮬레이션하여 성능과 효과를 평가합니다.
+3. **Data Transmission**:
+   - Data packets are sent through the established route.
+
+4. **Route Maintenance**:
+   - Link failures trigger **RERR** messages to repair or remove routes.
+
+---
+
+## 🔑 AODV Parameters
+
+| **Parameter**          | **Description**                                           |
+|------------------------|-----------------------------------------------------------|
+| **Active Route Time**  | Time a route remains active without usage.                |
+| **Delete Period (DPC)**| Wait time before removing a broken route.                 |
+| **Sequence Numbers**   | Ensures fresh, loop-free routing paths.                   |
+
+---
+
+## 🛠️ Tools for Simulation
+
+AODV is often evaluated using powerful simulation tools:
+
+- **NS-3**: Modular network simulation framework with AODV support.
+- **SUMO**: Simulates realistic vehicular mobility for VANET scenarios.
+- **OSM**: Provides real-world map data for accurate modeling.
+
+---
+
+## 📊 Performance Metrics
+
+Key metrics for evaluating AODV performance include:
+
+- **Packet Delivery Ratio (PDR)**: Percentage of packets successfully delivered.
+- **Throughput**: Total successful data delivery rate.
+- **End-to-End Delay**: Average time for a packet to reach its destination.
+
+---
+
+## 🌈 Advantages and Limitations
+
+### ✅ Advantages
+- Minimal overhead due to on-demand routing.
+- Adaptable to dynamic network topologies.
+- Supports both unicast and multicast communication.
+
+### ❌ Limitations
+- Initial route discovery introduces latency.
+- Performance may degrade in dense or highly mobile networks.
+- Scalability issues in very large networks.
+
+---
+
+## 🎯 Conclusion
+The **AODV routing protocol** is vital for dynamic and efficient communication in ad hoc and vehicular networks. While it has limitations, its adaptability and simplicity make it a preferred choice for many applications.
+
+---
+
+**🔗 Related Resources**:
+- [RFC 3561: AODV Specification](https://www.rfc-editor.org/rfc/rfc3561)
+- [NS-3 AODV Documentation](https://www.nsnam.org/docs/models/html/aodv.html)
+
+**Tags**: `#AODV`, `#VANET`, `#Routing`, `#NS3`
