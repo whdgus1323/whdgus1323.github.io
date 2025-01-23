@@ -673,7 +673,8 @@ $sidebar-display: "sidebar-display";
       @include no-text-decoration;
 
       //color: var(--sidebar-active-color) !important;
-      color: rgba(000, 000, 000, 0.7) !important;
+      //color: rgba(000, 000, 000, 0.7) !important;
+      color: rgba(255, 255, 255, 0.7) !important;;
       font-weight: bold;
     }
   }
