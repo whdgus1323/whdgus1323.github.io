@@ -759,7 +759,8 @@ $sidebar-display: "sidebar-display";
 
     &.active {
       .nav-link {
-        color: #000;
+        //color: #000;
+        color: #ffffff;
         font-weight: 1000;
       }
     }
