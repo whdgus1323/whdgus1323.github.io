@@ -667,7 +667,7 @@ $sidebar-display: "sidebar-display";
   a {
     @extend %sidebar-links;
     //color: rgba(000, 000, 000, 0.7);
-    color: rgba(0, 31, 63, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 
     &:hover {
       @include no-text-decoration;
